@@ -49,3 +49,4 @@ $users = User::search(request('search_query'), [
 
 ```php
 ```
+// e.g http://example.com/search?q=searchTerm

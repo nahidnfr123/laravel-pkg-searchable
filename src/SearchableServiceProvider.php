@@ -3,7 +3,6 @@
 namespace Nahid\Searchable;
 
 use Illuminate\Support\ServiceProvider;
-use Nahid\Searchable\Traits\Searchable;
 
 class SearchableServiceProvider extends ServiceProvider
 {
