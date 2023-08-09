@@ -1,7 +1,7 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "name": "nahid-ferdous/laravel-searchable",
-  "description": "Make Eloquent Search At Ease.",
+  "description": "Laravel Package To make Eloquent Queries Shorter.",
   "type": "library",
   "license": "MIT",
   "repositories": [
@@ -36,6 +36,6 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7.4",
-    "laravel/framework": "^10.0"
+    "laravel/framework": ">=6.0"
   }
 }
