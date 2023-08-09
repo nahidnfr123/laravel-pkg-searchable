@@ -1,5 +1,5 @@
 {
-  "version": "1.2.8",
+  "version": "1.2.9",
   "name": "nahid-ferdous/laravel-searchable",
   "description": "Laravel Package To make Eloquent Queries Shorter.",
   "type": "library",
