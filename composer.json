@@ -7,10 +7,10 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/nahidnfr123/laravel-pkg-searchable.git"
+      "url": "https://github.com/nahidnfr123/laravel-searchable.git"
     }
   ],
-  "homepage": "https://github.com/nahidnfr123/laravel-pkg-searchable",
+  "homepage": "https://github.com/nahidnfr123/laravel-searchable",
   "keywords": [
     "laravel",
     "search",
