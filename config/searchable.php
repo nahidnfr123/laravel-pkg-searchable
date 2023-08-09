@@ -1,6 +1,8 @@
 <?php
 
 return [
-    // query parameter key
+    /*
+     * Default search term
+     */
     'key' => 'search_query',
 ];

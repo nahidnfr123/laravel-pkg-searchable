@@ -8,11 +8,10 @@ class SearchableServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/searchable.php', 'searchable',);
-
         $this->app->bind('searchable', function ($app) {
             return new \Nahid\Searchable\Facades\Searchable();
         });
+        $this->mergeConfigFrom(__DIR__ . '/../config/searchable.php', 'searchable',);
     }
 
     public function boot()
