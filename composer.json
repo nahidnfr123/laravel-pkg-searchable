@@ -1,0 +1,21 @@
+{
+    "name": "nahid-ferdous/laravel-searchable",
+    "description": "Make Eloquent Search With Ease.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nahid\\Searchable\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nahid ferdous",
+            "email": "nahidferdous240@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    }
+}
