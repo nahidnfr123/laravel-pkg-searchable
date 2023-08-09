@@ -1,6 +1,6 @@
 <?php
 
-namespace Nahid\Searchable\Traits;
+namespace Nahid\Searchable;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;

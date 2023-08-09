@@ -8,18 +8,27 @@ You can install the package via composer:
 composer require nahid-ferdous/laravel-searchable
 ```
 
-Import in model class
+## Usage
 
-```php  
-use Nahid\Searchable\Traits\Searchable;
-```
-
-Usage
+Import in Model
 
 ```php
+# Example Model:
+use Nahid\Searchable\Searchable;
+
 class User extends Authenticatable
 {
     use Searchable;
+    
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+    
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
 ```
 

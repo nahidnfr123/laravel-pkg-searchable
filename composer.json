@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.1",
   "name": "nahid-ferdous/laravel-searchable",
   "description": "Make Eloquent Search At Ease.",
   "type": "library",
@@ -14,6 +14,7 @@
   "keywords": [
     "laravel",
     "search",
+    "date_search",
     "searchable",
     "dynamic_search",
     "model_search",
