@@ -35,7 +35,7 @@ class User extends Authenticatable
 Publish config file
 
 ```sh
-php artisan vendor:publish --provider="nahid-ferdous/laravel-searchable"
+php artisan vendor:publish --provider="Nahid\Searchable\SearchableServiceProvider"
 ```
 
 // e.g search url http://example.com/users?search_query=searchTerm&status=1&date=2020-01-01&date_range=2020-01-01%20-%202020-01-31
