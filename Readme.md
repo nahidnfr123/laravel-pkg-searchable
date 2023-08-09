@@ -29,18 +29,14 @@ Publish config file
 php artisan vendor:publish --provider="nahid-ferdous/laravel-searchable"
 ```
 
-// e.g search url http://example.com/users?search_query=searchTerm
+// e.g search url http://example.com/users?search_query=searchTerm&status=1&date=2020-01-01&date_range=2020-01-01%20-%202020-01-31
 
 Example In single Model:-
 
 ```php
 # Usage:
 $searchQuery = request('search_query');
-$users = User::search($searchQuery, [
-        '%name',
-        '%email',
-        'phone',
-    ])->get();
+$users = User::search($searchQuery, ['%name', '%email', 'phone'])->get();
 
 # Output:
 User::where('name', 'like', '%'.$searchQuery.'%')
@@ -152,3 +148,15 @@ User::where('status', $status)
      $query->orWhereBetween($relationAttribute, $searchTerm);
     ->get();
 ```
+
+Example Date Search With Relation:-
+
+````
+### Coming Soon
+````
+
+Example Date Range Search With Relation:-
+
+````
+### Coming Soon
+````
