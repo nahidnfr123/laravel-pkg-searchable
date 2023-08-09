@@ -1,1 +1,1 @@
-git add . && git commit -m "update" && git push -u origin master && git tag -a v1.0.0 -m "Release 1.0.0" && git push --follow-tags
+git add . && git commit -m "update" && git push -u origin master && git tag -a v1.2.2 -m "Release 1.2.2" && git push --follow-tags
