@@ -11,15 +11,13 @@ class SearchableServiceProvider extends ServiceProvider
 //        $this->app->bind('searchable', function () {
 //                return new Searchable();
 //        });
-        $this->mergeConfigFrom(
-            __DIR__ . '/../config/searchable.php', 'searchable',
-        );
+        $this->mergeConfigFrom(__DIR__ . '/../config/searchable.php', 'searchable',);
     }
 
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/searchable.php' => 'searchable',
-        ], 'nahid-ferdous/searchable');
+            __DIR__ . '/../config/searchable.php' => config_path('searchable.php'),
+        ], 'config');
     }
 }
