@@ -1,22 +1,40 @@
 {
-    "name": "nahid-ferdous/laravel-searchable",
-    "description": "Make Eloquent Search With Ease.",
-    "type": "composer-plugin",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Nahid\\Searchable\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "nahid ferdous",
-            "email": "nahidferdous240@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.4",
-        "laravel/framework": "^10.0"
+  "version": "1.0.0",
+  "name": "nahid-ferdous/laravel-searchable",
+  "description": "Make Eloquent Search With Ease.",
+  "type": "library",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nahidnfr123/laravel-pkg-searchable.git"
     }
+  ],
+  "homepage": "https://github.com/nahidnfr123/laravel-pkg-searchable",
+  "keywords": [
+    "laravel",
+    "search",
+    "searchable",
+    "dynamic_search",
+    "model_search",
+    "relation_search",
+    "relational_search",
+    "automatically_search"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nahid\\Searchable\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "nahid ferdous",
+      "email": "nahidferdous240@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4",
+    "laravel/framework": "^10.0"
+  }
 }
