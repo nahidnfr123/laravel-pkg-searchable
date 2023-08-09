@@ -18,6 +18,6 @@ class SearchableServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/searchable.php' => config_path('searchable.php'),
-        ], 'config');
+        ], 'laravel-shareable-config');
     }
 }
