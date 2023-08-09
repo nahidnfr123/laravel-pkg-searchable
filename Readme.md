@@ -5,7 +5,7 @@
 You can install the package via composer:
 
 ```sh
-composer require nahid/searchable
+composer require nahid-ferdous/laravel-searchable
 ```
 
 Import in model class

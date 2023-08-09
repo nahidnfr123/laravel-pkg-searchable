@@ -1,7 +1,7 @@
 {
     "name": "nahid-ferdous/laravel-searchable",
     "description": "Make Eloquent Search With Ease.",
-    "type": "project",
+    "type": "composer-plugin",
     "license": "MIT",
     "autoload": {
         "psr-4": {
