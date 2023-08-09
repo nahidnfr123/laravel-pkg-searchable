@@ -1,15 +1,8 @@
 {
-  "version": "1.3.4",
+  "version": "1.3.5",
   "name": "nahid-ferdous/laravel-searchable",
   "description": "Laravel Package To make Eloquent Queries Shorter.",
   "license": "MIT",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/nahidnfr123/laravel-searchable.git"
-    }
-  ],
-  "homepage": "https://github.com/nahidnfr123/laravel-searchable",
   "keywords": [
     "laravel",
     "search",
@@ -21,11 +14,6 @@
     "relational_search",
     "automatically_search"
   ],
-  "autoload": {
-    "psr-4": {
-      "Nahid\\Searchable\\": "src/"
-    }
-  },
   "authors": [
     {
       "name": "nahid ferdous",
@@ -34,9 +22,29 @@
       "role": "Developer"
     }
   ],
-  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nahidnfr123/laravel-searchable.git"
+    }
+  ],
+  "homepage": "https://github.com/nahidnfr123/laravel-searchable",
   "require": {
     "php": ">=7.4",
     "laravel/framework": ">=6.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Nahid\\Searchable\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nahid\\Searchable\\SearchableServiceProvider"
+      ]
+    }
   }
 }
