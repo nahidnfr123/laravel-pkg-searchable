@@ -151,10 +151,10 @@ $users = User::search($status, ['status'])
 # Output:
 $startDate = explode(' - ', $dateRange)[0];
 $endDate = explode(' - ', $dateRange)[1];
+$start = Carbon::parse($startDate);
+$end = Carbon::parse($endDate);
 User::where('status', $status)
-    ->whereDate('created_at', '>=', $startDate)
-    ->whereBetween('created_at', '<=', $endDate)
-     $query->orWhereBetween($relationAttribute, $searchTerm);
+     ->whereBetween($relationAttribute, [$start, $end$end]);
     ->get();
 ```
 
