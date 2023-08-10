@@ -1,6 +1,6 @@
 <?php
 
-namespace Nahid\Searchable\Facades;
+namespace NahidFerdous\Searchable\Facades;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Nahid\Searchable\Searchable
+ * @see \NahidFerdous\Searchable\Searchable
  */
 class Searchable extends Facade
 {

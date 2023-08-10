@@ -1,6 +1,6 @@
 <?php
 
-namespace Nahid\Searchable;
+namespace NahidFerdous\Searchable;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,7 +9,7 @@ class SearchableServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('searchable', function ($app) {
-            return new \Nahid\Searchable\Facades\Searchable();
+            return new \NahidFerdous\Searchable\Facades\Searchable();
         });
         $this->mergeConfigFrom(__DIR__ . '/../config/searchable.php', 'searchable',);
     }

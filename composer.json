@@ -37,13 +37,13 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Nahid\\Searchable\\": "src"
+      "NahidFerdous\\Searchable\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Nahid\\Searchable\\SearchableServiceProvider"
+        "NahidFerdous\\Searchable\\SearchableServiceProvider"
       ]
     }
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nahid\Searchable;
+namespace NahidFerdous\Searchable;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
