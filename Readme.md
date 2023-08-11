@@ -154,7 +154,7 @@ $endDate = explode(' - ', $dateRange)[1];
 $start = Carbon::parse($startDate);
 $end = Carbon::parse($endDate);
 User::where('status', $status)
-     ->whereBetween($relationAttribute, [$start, $end$end]);
+     ->whereBetween($relationAttribute, [$start, $end]);
     ->get();
 ```
 
