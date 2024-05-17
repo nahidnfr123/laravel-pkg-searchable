@@ -63,7 +63,6 @@ trait Searchable
                                         } else {
                                             $query->where($relationAttribute, 'LIKE', "%{$searchTerm}%");
                                         }
-//                                        $query->where($relationAttribute, 'LIKE', "%{$searchTerm}%");
                                     } else {
                                         $query->where($relationAttribute, $searchTerm);
                                     }
