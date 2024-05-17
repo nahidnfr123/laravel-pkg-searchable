@@ -57,7 +57,13 @@ trait Searchable
                                 $query->orWhereHas($relationName, function (Builder $query) use ($searchTerm, $relationAttribute) {
                                     if (str_contains($relationAttribute, '%')) {
                                         $relationAttribute = str_replace('%', '', $relationAttribute);
-                                        $query->where($relationAttribute, 'LIKE', "%{$searchTerm}%");
+                                        if (str_contains($relationAttribute, '+')) {
+                                            $relationAttributes = explode('+', $relationAttribute);
+                                            $query->where(DB::raw("concat($relationAttributes[0], ' ', $relationAttributes[1])"), 'LIKE', "%" . $searchTerm . "%");
+                                        } else {
+                                            $query->where($relationAttribute, 'LIKE', "%{$searchTerm}%");
+                                        }
+//                                        $query->where($relationAttribute, 'LIKE', "%{$searchTerm}%");
                                     } else {
                                         $query->where($relationAttribute, $searchTerm);
                                     }
@@ -122,7 +128,8 @@ trait Searchable
                                 $query->orWhereHas($relationName, function (Builder $query) use ($searchTerm, $relationAttributes, $operator) {
                                     $query->where(function (Builder $query) use ($searchTerm, $relationAttributes, $operator) {
                                         foreach ($relationAttributes as $relationAttribute) {
-                                            if (str_contains($searchTerm, ' - ')) {$searchTerm = explode(' - ', $searchTerm);
+                                            if (str_contains($searchTerm, ' - ')) {
+                                                $searchTerm = explode(' - ', $searchTerm);
                                                 $start = Carbon::parse($searchTerm[0]);
                                                 $end = Carbon::parse($searchTerm[1]);
                                                 $query->orWhereBetween($relationAttribute, [$start, $end]);
@@ -135,7 +142,8 @@ trait Searchable
                             },
                             function (Builder $query) use ($searchTerm, $relationName, $relationAttribute, $operator) {
                                 $query->orWhereHas($relationName, function (Builder $query) use ($searchTerm, $relationAttribute, $operator) {
-                                    if (str_contains($searchTerm, ' - ')) {$searchTerm = explode(' - ', $searchTerm);
+                                    if (str_contains($searchTerm, ' - ')) {
+                                        $searchTerm = explode(' - ', $searchTerm);
                                         $start = Carbon::parse($searchTerm[0]);
                                         $end = Carbon::parse($searchTerm[1]);
                                         $query->orWhereBetween($relationAttribute, [$start, $end]);
